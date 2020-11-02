@@ -43,13 +43,13 @@ WINDOW_HEIGHT = 720
 VIRTUAL_WIDTH = 432
 VIRTUAL_HEIGHT = 243
 
-local PADDLE_SPEED = 200  -- movind speed of the paddles in pixels per second; multiplied by dt in update
+local PADDLE_SPEED = 200  -- moving speed of the paddles in pixels per second; multiplied by dt in update
 local PADDLE_WIDTH = 5
 local PADDLE_HEIGHT = 20
-local PADDLE_POS_OFFSET_Y = 30    -- number of pixels the paddels are offset from the horizontal borders of the screen at the start
-local PADDLE_POS_OFFSET_X = 10    -- number of pixels the paddels are offset from the vertical borders of the screen
+local PADDLE_POS_OFFSET_Y = 30    -- number of pixels the paddles are offset from the horizontal borders of the screen at the start
+local PADDLE_POS_OFFSET_X = 10    -- number of pixels the paddles are offset from the vertical borders of the screen
 
-local BALL_SIZE = 4             -- heigth and width of the ball
+local BALL_SIZE = 4             -- height and width of the ball
 local BALL_START_SPEED = 150    -- velocity of the ball when the game starts in pixels per second
 local BALL_INC_VELO = 1.03      -- factor by which the velocity of the ball increases every time it hits a paddle
 
@@ -111,7 +111,7 @@ function love.load()
     -- player who won the game; not set to a proper value until we reach that state in the game
     winningPlayer = 0
     -- playMode is either '1player' or '2player'.
-    -- if '2player' both paddles are conrolled by the keyboard. if '1player' the right paddle is controlled by the computer
+    -- if '2player' both paddles are controlled by the keyboard. if '1player' the right paddle is controlled by the computer
     playMode = '1player'
 
     -- left paddle is player1
