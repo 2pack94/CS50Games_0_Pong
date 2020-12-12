@@ -153,7 +153,7 @@ function love.keypressed(key)
         love.event.quit()
     -- if we press enter during the start state of the game, we'll go into play mode
     -- during play mode, the ball will move in a random direction
-    elseif key == 'enter' or key == 'return' then
+    elseif key == 'return' then
         if gameState == 'start' or gameState == 'done' then
             player1Score = 0
             player2Score = 0
